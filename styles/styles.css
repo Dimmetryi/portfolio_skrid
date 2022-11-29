@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color:#FFFFFF
+}
+
+.container{
+    max-width: 940px;
+    margin:0 auto;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.link_menu{
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+.link_menu:hover, .link_menu:active{
+    color: #070707;
+    transition: 0.5s;
+}
+
+.head_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_name{
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+    width:123.51px; 
+     margin-top: 40px;
+}
+
+.profession{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    width:152px;
+    margin-top: 100px;
+}
+
+.lang{
+    transform: rotate(-90deg);
+    margin-bottom:0;
+    width:65x;
+    height: 20px;
+    margin-top: 105px;
+}
+
+.lang_link{
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;  
+}
+
+.lang_link:last-child{
+    border-left:2px solid #070707;
+    padding-left: 5px;
+}
+
+.lang_link:hover{
+    color:#070707;
+    transition: 0.5s;
+}
+
+.pic_person{
+    margin-top: 30px;
+    width: 943.61px;
+    height: 387px;
+    background-image: url('/img/back_head.png') center no-repeat;
+}
+
+@media(max-width:960px)
+{
+    .pic_person{
+        background-image: url('/img/back_head_adaptive.png');
+    }
+     
+}
