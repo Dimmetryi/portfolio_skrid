@@ -124,7 +124,7 @@ a{
     margin-top: 30px;
     width: 943.61px;
     height: 387px;
-    background-image: url('/img/back_head.png') center no-repeat;
+    background-image: url('/img/back_head.png');
 }
 
 @media(max-width:960px)
