@@ -127,7 +127,7 @@ a{
 }
 
 .header_burger{
-    display: block;
+    display: none;
 }
 
 @media(max-width:960px)
@@ -140,13 +140,19 @@ a{
      
 }
 
+.header{
+    position: relative;
+}
+
 @media(max-width:767px){
     .header_burger{
-        display: block;
-        position: relative;
+        display: inline-block;
+        position: absolute;
         width:30px;
         height:20px;
         z-index: 3;
+        right:75px;
+        top: 75px;
     }
     .header_burger:before, .header_burger:after{
         content: ' ';
@@ -172,6 +178,7 @@ a{
     }
     .nav_menu{
         position: fixed;
+        display: block;
         top:0;
         left:0;
         width:100%;
@@ -179,7 +186,13 @@ a{
         background-color:#fff;
         z-index: 2;
     }
+    .link_menu{
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+        line-height: 42px;
+        margin-left: 26px;
+    }
     .menu_txt{
-        display: none;
+        margin-top: 68px;
     }
 }
